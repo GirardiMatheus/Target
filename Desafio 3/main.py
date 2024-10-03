@@ -2,7 +2,7 @@ import json
 
 def calcular_faturamento(dados_faturamento):
 # Calcula o menor e maior faturamento, além dos dias acima da média.
-    faturamentos = [valor for valor in dados_faturamento.values() if valor is not None]
+    faturamentos = [item['valor'] for item in dados_faturamento if item['valor'] > 0]
 
     if not faturamentos:
         return None, None, 0
@@ -14,21 +14,19 @@ def calcular_faturamento(dados_faturamento):
 
     return menor_faturamento, maior_faturamento, media_faturamento, dias_acima_media
 
-# Leitura da base de dados
 def ler_dados_json(arquivo):
     with open(arquivo, 'r') as f:
         return json.load(f)
 
-# Exemplo de dadis
+# Dados
 arquivo_json = 'Desafio 3/faturamento.json'  
 dados = ler_dados_json(arquivo_json)
 
-menor, maior, media, dias_acima = calcular_faturamento(dados['faturamento'])
+menor, maior, media, dias_acima = calcular_faturamento(dados)
 
-# Resultado
 if menor is not None:
-    print(f"Menor faturamento: {menor}")
-    print(f"Maior faturamento: {maior}")
+    print(f"Menor faturamento: {menor:.2f}")
+    print(f"Maior faturamento: {maior:.2f}")
     print(f"Média de faturamento: {media:.2f}")
     print(f"Número de dias acima da média: {dias_acima}")
 else:
