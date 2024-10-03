@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faturamento>
+    <dia data="1">150</dia>
+    <dia data="2">200</dia>
+    <dia data="3">null</dia>
+    <dia data="4">300</dia>
+    <dia data="5">250</dia>
+    <dia data="6">null</dia>
+    <dia data="7">400</dia>
+    <dia data="8">450</dia>
+    <dia data="9">500</dia>
+    <dia data="10">null</dia>
+    <dia data="11">600</dia>
+    <dia data="12">550</dia>
+    <dia data="13">null</dia>
+    <dia data="14">700</dia>
+    <dia data="15">650</dia>
+    <dia data="16">null</dia>
+    <dia data="17">800</dia>
+    <dia data="18">750</dia>
+    <dia data="19">null</dia>
+    <dia data="20">900</dia>
+    <dia data="21">950</dia>
+    <dia data="22">null</dia>
+    <dia data="23">1000</dia>
+    <dia data="24">1100</dia>
+    <dia data="25">null</dia>
+    <dia data="26">1200</dia>
+    <dia data="27">1250</dia>
+    <dia data="28">null</dia>
+    <dia data="29">1300</dia>
+    <dia data="30">1350</dia>
+</faturamento>
